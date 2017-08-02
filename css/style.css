@@ -1,0 +1,792 @@
+@charset "UTF-8";
+/*Fonts from Google Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+/* ==========================================================================
+   TITLE: Project Name
+   AUTHOR: Author
+   ORIGIN DATE: Oct 03, 2015 v1
+   LAST UPDATED: Oct 22, 2015
+   WEBSITE: www.site.com
+========================================================================== */
+
+/*CSS RESETS*/
+/* html5doctor.com Reset v1.6.1 - http://cssreset.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+/*Personal RESETS*/
+html, body {height: 100%;} /*Allows for one-page layout*/
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+a {text-decoration: none;}
+li {list-style: none;}
+button {outline:none;}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+
+@font-face {
+		font-family: "von_font";
+		font: Helvetica, Helvetica Neue, Arial,;
+	src: local(von_font), url(../vonique_64/Vonique%2064.ttf) format('opentype');
+}
+
+
+body {
+    background-color: rgb(51,51,51);
+    overflow: hidden;
+}
+
+header{
+	position: fixed;
+	width:100%;
+}
+
+header p{
+	font: 5em von_font;
+	color: #F2F8F1;
+	
+}
+
+#u{
+	margin: 2%;
+}
+
+nav a{
+	Float:right;
+	color: #F2F8F1;
+	opacity: .5;
+	white-space: nowrap;
+	margin-top:2%;
+	margin-right: 3%;
+	padding-bottom: .2%;
+	letter-spacing: 1.5px;
+}
+
+nav{
+	font-size: 1.5em;
+	font-family: helvetica;
+	}
+
+
+#wrapper{
+	width:99.7%;
+	height:100%;
+	text-align: center;
+	z-index:-10;
+}
+
+#title{
+	font: 13em von_font;
+	color: #F2F8F1;
+	opacity: .1;
+	display: block;
+	padding:12% 0 12% 0;
+}
+
+#t-menu{
+	margin-left: 20%;
+	margin-top:20% ;
+	opacity: 0;
+	font-size: 4.3em;
+	font-family: helvetica;
+}
+
+#t-menu a{
+	display: block;
+	color: #F2F8F1;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+	text-align: left;
+	padding-top: 2%;
+}
+
+
+span{
+	font-size: 1.5em;
+	position: relative;
+	top: 75px;
+	margin-right: 5%;
+	display:inline-block;
+}
+
+#examples{
+
+	display: block;
+	letter-spacing: 1.5px;
+}
+
+#websites{
+	font: 2em Helvetica, Helvetica Neue, Arial;
+	width:80%;
+	height: 200px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 3px solid #F2F8F1;
+	color:#F2F8F1;
+	text-align: center;
+	margin-left: 10%;
+}
+
+#art{
+	font: 2em Helvetica, Helvetica Neue, Arial;
+	width:80%;
+	height: 200px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 3px solid #F2F8F1;
+	color:#F2F8F1;
+	text-align: center;
+	margin-left: 10%;
+	margin-bottom: 5%;
+	margin-top: -5%;
+}
+
+
+#port p{
+	margin-top:5%;
+}
+
+#portbtns{
+	display:none ;
+	width:80%;
+	margin-left: 6%;
+	border: 3px solid #F2F8F1;
+	padding:3%;
+}
+
+#portbtns img{
+	display:block;
+	width:40%;
+	margin-top: .5%;
+	margin-left: 30%;
+}
+
+#a-portbtns{
+	display:none ;
+	margin-left: 10%;
+	border: 3px solid #F2F8F1;
+	width:60%;
+	padding:3% 3% 3% 15%;
+	overflow-y: scroll;
+	height:300px;
+}
+
+#a-portbtns a{
+	padding: 2%;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+#expect{
+	font: .5em Helvetica, Helvetica Neue, Arial;
+	line-height: 60px;
+	letter-spacing: 1.5px;
+	width:65%;
+	color:#F2F8F1;
+	margin-left: 10%;
+	padding:10% 0% 10% 8%;
+}
+
+#expect p{
+	padding: 10%, 0, 10%, 0;
+	}
+
+#e-t{
+	font-size:3em;
+	margin-left: 15%;
+	margin-top: 5%;
+}
+
+ul{
+	width:70%;
+	margin: 0 auto;
+}
+
+li{
+	padding: 5% 0 0 0;
+	text-align: left;
+}
+
+#contact{
+	width:100%;
+	padding:17% 0% 10% 0;
+}
+
+form{
+	width:80%;
+	margin:0 auto;
+}
+
+input{
+	width:30%;
+	height:50px;
+	margin-bottom: 5%;
+	font: 1em Helvetica, Helvetica Neue, Arial;
+	color:rgb(51,51,51);
+}
+
+#name{
+	
+}
+
+#email{
+	margin-left: 10%;
+}
+
+
+#contact span{
+	display:block;
+	color:#F2F8F1;!important;
+}
+
+textarea{
+	font: 1em Helvetica, Helvetica Neue, Arial;
+	width:100%;
+	height:280px;
+}
+
+#send{
+	font: 1.2em Helvetica, Helvetica Neue, Arial;
+	width:20%;
+	height:50px;
+	background-color:rgba(0,0,0,0);
+	margin-top: 2%; 
+	margin-left: 75%;
+	color:#F2F8F1;
+	font-size: 1.2em;
+	
+}
+
+#social{
+	margin-left: -2%;
+	margin-bottom: .5%;
+	
+}
+
+svg{
+	width:50px;
+	height:50px;
+	margin-left: 2%;
+	color: rgb(110,111,107);
+	fill: currentColor;
+	
+}
+
+#footer{
+	font: .5em Helvetica, Helvetica Neue, Arial;
+	width:100%;
+	color:#F2F8F1;
+	position: fixed;
+	bottom:5px;
+	opacity: .2;
+}
+	
+}
+
+@media only screen and (min-width: 300px){
+	
+#title{
+	font-size: 1em;
+
+}
+
+#t-menu{
+	font-size: 3em;
+}
+
+#u{
+	display: block;
+}
+
+span{
+	top: 20px;
+}
+
+header p{
+	font-size: 3em;
+}
+
+nav{
+	font-size: .8em;
+}
+
+#examples{
+	padding:30% 0% 20% 0;
+	}
+
+#expect p{
+	font-size:1.5em;
+}
+
+#expect li {
+	font-size: 1em;
+	text-align: center;
+}
+	
+input{
+	font-size: .8em;
+}
+
+textarea{
+	font-size: .8em;
+}
+
+#send{
+	font-size: 1em;
+	width:20%;
+	height:50px;
+}
+
+#port{
+	font-size: 1.5em;
+}
+
+#portbtns img{
+	width:60%;
+	margin-left: 21.5%;
+}
+
+#mission{
+	font-size: 1em ;
+	line-height: 50px;
+}
+
+ul{
+	width:85%;
+	line-height: 25px;
+}
+
+svg{
+	width: 40px;
+	height:40px;
+}
+	
+}
+
+@media only screen and (min-width: 300px){
+	
+#title{
+	font-size: 5em;
+	padding:15% 0 15% 0;
+}
+
+#t-menu{
+	font-size: 3em;
+}
+
+#u{
+	display: block;
+}
+
+span{
+	top: 20px;
+}
+
+header p{
+	font-size: 3em;
+}
+
+nav{
+	font-size: .8em;
+}
+
+#examples{
+	padding:30% 0% 20% 0;
+	}
+
+#expect p{
+	font-size:1.5em;
+}
+
+#expect li {
+	font-size: 1em;
+	text-align: center;
+}
+	
+input{
+	font-size: .8em;
+}
+
+textarea{
+	font-size: .8em;
+}
+
+#send{
+	font-size: 1em;
+	width:20%;
+	height:50px;
+}
+
+#port{
+	font-size: 1.5em;
+}
+
+#portbtns img{
+	width:60%;
+	margin-left: 21.5%;
+}
+
+#mission{
+	font-size: 1em ;
+	line-height: 50px;
+}
+
+ul{
+	width:85%;
+	line-height: 25px;
+}
+
+svg{
+	width: 40px;
+	height:40px;
+}
+	
+}
+
+@media only screen and (min-width: 800px) {
+	
+#title{
+	font-size: 6.5em;
+	padding:10% 0 10% 0;
+}
+
+#t-menu{
+	font-size: 4em;
+}
+
+span{
+	top: 40px;
+}
+
+header p{
+	font-size: 4em;
+}
+
+nav{
+	font-size: 1em;
+}
+
+#examples{
+	padding:20% 0% 20% 0;
+	}
+
+#expect p{
+	font-size:1.5em;
+	line-height: 45px;
+}
+
+	
+input{
+	font-size: .8em;
+}
+
+textarea{
+	font-size: .8em;
+}
+
+#send{
+	font-size: 1.2em;
+}
+
+#port{
+	font-size: 1.5em;
+}
+
+#portbtns img{
+	width:60%;
+	margin-left: 21.5%;
+}
+
+#execpt{
+	font-size:1em;
+}
+
+#mission{
+	font-size: 1.2em ;
+	line-height: 80px;
+}
+
+ul{
+	width:85%;
+	line-height: 35px;
+}
+
+}
+
+@media only screen and (min-width: 1100px) {
+	
+#title{
+	font-size: 8em;
+	padding:10% 0 10% 0;
+}
+
+#t-menu{
+	font-size: 4.3em;
+}
+
+span{
+	top: 48px;
+}
+
+header p{
+	font-size: 5em;
+}
+
+nav{
+	font-size: 1em;
+}
+
+#expect p{
+	font-size:2em;
+	line-height: 60px;
+}
+	
+input{
+	font-size: .8em;
+}
+
+textarea{
+	font-size: .8em;
+}
+
+#send{
+	font-size: 1.2em;
+}
+
+#port{
+	font-size: 2em;
+}
+
+#portbtns img{
+	width:40%;
+	margin-left: 30%;
+}
+
+#execpt{
+	font-size:1em;
+}
+
+#mission{
+	font-size: 1.2em ;
+}
+
+ul{
+	width:75%;
+}
+	
+}
+
+@media only screen and (min-width: 1400px) and (max-width:1799px) {
+	
+#title{
+	font-size: 10em;
+	padding:12% 0 12% 0;
+}
+
+span{
+	top: 58px;
+}
+
+header p{
+	font-size: 5em;
+}
+
+nav{
+	font-size: 1em;
+}
+
+#expect p{
+	font-size:2em;
+	line-height: 60px;
+}
+
+input{
+	font-size: 1em;
+}
+
+textarea{
+	font-size: 1em;
+}
+
+#send{
+	font-size: 1.2em;
+}
+
+#port{
+	font-size: 2em;
+	
+}
+
+#portbtns img{
+	width:40%;
+	margin-left: 30%;
+}
+
+#execpt{
+	font-size:1em;
+}
+
+#mission{
+	font-size: 1.4em ;
+}
+
+ul{
+	width:69%;
+}
+	
+}
+
+@media only screen and (min-width: 1800px) {
+	
+#title{
+	font-size: 10em;
+	padding:12% 0 12% 0;
+}
+
+span{
+	top: 58px;
+}
+
+header p{
+	font-size: 5em;
+}
+
+nav{
+	font-size: 1.5em;
+}
+
+#expect p{
+	font-size:3em;
+	line-height: 60px;
+}
+
+input{
+	font-size: 1em;
+}
+
+textarea{
+	font-size: 1em;
+}
+
+#send{
+	font-size: 1.2em;
+}
+
+#port{
+	font-size: 2em;
+	
+}
+
+#portbtns img{
+	width:40%;
+	margin-left: 30%;
+}
+
+#execpt{
+	font-size:.5em;
+}
+
+#mission{
+	font-size: 1.4em ;
+}
+
+ul{
+	width:69%;
+}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
